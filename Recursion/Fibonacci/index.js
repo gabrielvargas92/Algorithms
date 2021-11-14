@@ -12,12 +12,10 @@ function fibonacciIterative(n) {
 fibonacciIterative(3);
 
 function fibonacciRecursive(n) {
-    if (n === 0)
-        return 0;
-    if (n <= 3)
-        return 1;
+    if (n < 2)
+        return n;
 
-    return fibonacciRecursive(n -1) + fibonacciRecursive(n - 2);
+    return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 }
 
 console.log(fibonacciRecursive(13))
